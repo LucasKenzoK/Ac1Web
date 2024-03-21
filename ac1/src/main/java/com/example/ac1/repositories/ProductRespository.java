@@ -24,7 +24,7 @@ public class ProductRespository {
     }
 
     public List<Produto> selecionarTodos() {
-        return entityManager.createQuery("Select p from Produtos", Produto.class).getResultList();
+        return entityManager.createQuery("Select p from Produto p", Produto.class).getResultList();
     }
 
     public Produto selecionarPorId(Produto produto) {
